@@ -13,7 +13,7 @@ def detecte_visages(image,show = False):
   
     img = cv2.imread(image)
     
-    face_model = cv2.CascadeClassifier("/home/mooh/Desktop/py/opencv-2.4.10/data/haarcascades/haarcascade_frontalface_alt2.xml") 
+    face_model = cv2.CascadeClassifier("./haarcascade_frontalface_alt2.xml") 
   
     rects = face_model.detectMultiScale(img)
     [l,c,d]=img.shape
